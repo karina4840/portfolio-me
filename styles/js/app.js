@@ -2,7 +2,7 @@ const titles = ["snowboarder 🏂", "traveler ✈️", "optimist 🥛", "forever
 const title = $("#title-changable");
 var loopItem = 0;
 
-setInterval(changeText, 1500);
+setInterval(changeText, 2000);
 
 function changeText() {
     title.fadeOut(function() {

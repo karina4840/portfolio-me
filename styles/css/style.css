@@ -5,7 +5,8 @@
 
 .home,
 .projects,
-.skills {
+.skills,
+.contact {
   padding: 0 10%;
   width: auto;
 }
@@ -186,12 +187,14 @@
 
 .nav-number {
   font-weight: 700;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .nav-item {
-  margin-right: 20px;
-  font-weight: 500;
+  font-weight: 300;
+  margin: auto;
+  height: 45px;
+  margin-right: 25px;
 }
 
 .nav-item a {
@@ -202,15 +205,31 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  text-decoration: none;
   color: #172c66;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.underline-hidden {
+  width: 90%;
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #f3d2c1), color-stop(50%, #f582ae)) right;
+  background: linear-gradient(to left, #f3d2c1 50%, #f582ae 50%) right;
+  background-size: 201% 4px;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.underline-hidden:hover {
+  background-position: bottom left;
 }
 
 .nav-button {
   padding: 10px 20px;
   border-radius: 5px;
-  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #f3e1d8), color-stop(50%, #f582ae)) right;
-  background: linear-gradient(to left, #f3e1d8 50%, #f582ae 50%) right;
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #f3d2c1), color-stop(50%, #f582ae)) right;
+  background: linear-gradient(to left, #f3d2c1 50%, #f582ae 50%) right;
   background-size: 201%;
   -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;

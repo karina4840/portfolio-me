@@ -7,7 +7,8 @@
 
 .home,
 .projects,
-.skills {
+.skills,
+.contact {
     padding: 0 10%;
     width: auto;
 }
@@ -73,7 +74,7 @@
     margin-top: 15px;
 }
 
-// =================TITLE STYLING ALL=================
+// ========TITLE STYLING ALL SECTIONS========
 
 .title-container{
     display: flex;
@@ -112,7 +113,7 @@
     margin-top: 10px;
     background-color: $pink;
     border-radius: 5px;
-} //????
+} 
 
 .nav-bar {
     width: 100%;
@@ -153,25 +154,41 @@
 
 .nav-number {
     font-weight: 700;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .nav-item {
-    margin-right: 20px;
-    font-weight: 500;
+    font-weight: 300;
+    margin: auto;
+    height: 45px;
+    margin-right: 25px;
 
     a {
         display: flex;
         flex-direction: row;
-        text-decoration: none;
         color: $navyBlue;
+        text-decoration: none;
+        margin-top: 10px;
     }
 }
+
+.underline-hidden {
+    width: 90%;
+    background: linear-gradient(to left, $peach 50%, $pink 50%) right;
+    background-size: 201% 4px;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    transition: 200ms ease-in-out;
+
+    &:hover {
+        background-position: bottom left;
+    }
+}   
 
 .nav-button {
     padding: 10px 20px;
     border-radius: 5px;
-    background: linear-gradient(to left, $ivory 50%, $pink 50%) right;
+    background: linear-gradient(to left, $peach 50%, $pink 50%) right;
     background-size: 201%;
     transition: 200ms ease-in-out;
 
@@ -185,6 +202,7 @@
         color: $navyBlue;
     }
 }
+
 // ======================================
 // =================HOME=================
 .home{
