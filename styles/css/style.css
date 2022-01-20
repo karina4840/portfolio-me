@@ -1,0 +1,481 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.home,
+.projects,
+.skills {
+  padding: 0 10%;
+  width: auto;
+}
+
+.contact-sides {
+  position: fixed;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.side-email {
+  left: 20px;
+}
+
+.email-div {
+  width: 20px;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.email-text {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #f582ae;
+  text-decoration: none;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.email-text:hover {
+  font-size: 17px;
+  color: #172c66;
+}
+
+.side-links {
+  right: 20px;
+}
+
+.links {
+  list-style: none;
+}
+
+.link-image {
+  margin-top: 15px;
+  cursor: pointer;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.link-image:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  stroke: #172c66;
+}
+
+.line {
+  position: relative;
+  background-color: #f582ae;
+  height: 150px;
+  width: 2px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+.title {
+  color: #172c66;
+  font-family: "Yeseva One", cursive;
+  font-size: 40px;
+}
+
+.title-number {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+}
+
+.title-line {
+  position: relative;
+  width: 200px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: #172c66;
+}
+
+.sub-line {
+  height: 2px;
+  width: 20vw;
+  position: absolute;
+  top: 313px;
+  margin-top: 10px;
+  background-color: #f582ae;
+  border-radius: 5px;
+}
+
+.nav-bar {
+  width: 100%;
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.nav-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.brand-pic {
+  height: 40px;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+
+.brand-name {
+  font-weight: 500;
+  color: #172c66;
+}
+
+.nav-elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-number {
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.nav-item {
+  margin-right: 20px;
+  font-weight: 500;
+}
+
+.nav-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-decoration: none;
+  color: #172c66;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #f3e1d8), color-stop(50%, #f582ae)) right;
+  background: linear-gradient(to left, #f3e1d8 50%, #f582ae 50%) right;
+  background-size: 201%;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.nav-button:hover {
+  background-position: left;
+}
+
+.nav-button .nav-resume-link {
+  text-decoration: none;
+  background-color: transparent;
+  color: #172c66;
+}
+
+.home {
+  height: 100vh;
+  background-color: #fef6e4;
+}
+
+.hero {
+  width: 65%;
+}
+
+.sub-heading {
+  color: #f582ae;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: clamp(16px, 8vw, 18px);
+  padding-top: 200px;
+}
+
+.main-heading {
+  font-family: "Yeseva One", cursive;
+  color: #172c66;
+  font-size: clamp(35px, 7vw, 70px);
+  font-weight: 100;
+  padding-top: 20px;
+}
+
+.text-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #172c66;
+  font-size: 25px;
+  letter-spacing: -1px;
+  padding-top: 20px;
+}
+
+.projects {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #f3e1d8;
+  padding: 10%;
+}
+
+.project-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.project-one,
+.project-two,
+.project-three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.left {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.right {
+  width: 40%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: right;
+      align-content: right;
+}
+
+.pink {
+  background-image: linear-gradient(45deg, #b095cfa6, #f582ae);
+  -webkit-box-shadow: 3px 3px 30px #d6ab95;
+          box-shadow: 3px 3px 30px #d6ab95;
+}
+
+.title-pink {
+  color: #f582ae;
+  text-shadow: 1px 1px 5px #fef6e4;
+}
+
+.yellow {
+  background-image: linear-gradient(45deg, #f3d13ba6, #f3d2c1);
+  -webkit-box-shadow: 3px 3px 30px #d6ab95;
+          box-shadow: 3px 3px 30px #d6ab95;
+}
+
+.title-yellow {
+  color: #d6ab95;
+  text-shadow: 1px 1px 5px #fef6e4;
+}
+
+.green {
+  background-image: linear-gradient(45deg, #6dc1cca6, #73ddb6a6);
+  -webkit-box-shadow: 3px 3px 30px #d6ab95;
+          box-shadow: 3px 3px 30px #d6ab95;
+}
+
+.title-green {
+  color: #6dc1cca6;
+  text-shadow: 1px 1px 5px #fef6e4;
+}
+
+.left-img {
+  position: relative;
+  z-index: 2;
+  -webkit-transform: translate(8%, 15%);
+          transform: translate(8%, 15%);
+  width: 300px;
+  height: 350px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+}
+
+.left-img img {
+  width: 150%;
+  height: auto;
+  -webkit-transform: translate(20%, 20%);
+          transform: translate(20%, 20%);
+}
+
+.right-title {
+  font-family: "Yeseva One", cursive;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.right-tech {
+  font-family: "Red Hat Mono", monospace;
+  font-size: 14px;
+  color: #172c66;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.right-info {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #172c66;
+}
+
+.skills {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #f3d2c1;
+  padding: 10%;
+}
+
+.skills-container {
+  background-color: #f3e1d8;
+  border-radius: 5px;
+  padding: 40px;
+  margin: auto;
+  -webkit-box-shadow: 3px 3px 50px #d6ab95;
+          box-shadow: 3px 3px 50px #d6ab95;
+}
+
+.contact {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #fef6e4;
+  padding: 10%;
+}
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-image: linear-gradient(45deg, #f3d13ba6, #f3d2c1);
+  -webkit-box-shadow: 3px 3px 30px #d6ab95;
+          box-shadow: 3px 3px 30px #d6ab95;
+  padding: 5%;
+  border-radius: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-text {
+  width: 45%;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #172c66;
+  font-weight: 300;
+}
+
+.contact-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #fef6e4), color-stop(50%, #ffedb3)) right;
+  background: linear-gradient(to left, #fef6e4 50%, #ffedb3 50%) right;
+  background-size: 201%;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.contact-button:hover {
+  background-position: left;
+}
+
+.contact-link {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #172c66;
+  font-size: 20px;
+}
+/*# sourceMappingURL=style.css.map */

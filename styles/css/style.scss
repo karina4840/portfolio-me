@@ -1,0 +1,400 @@
+@import 'variables';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.home,
+.projects,
+.skills {
+    padding: 0 10%;
+    width: auto;
+}
+
+// =================CONTACT SIDES=================
+
+.contact-sides{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.side-email{
+    left: 20px;
+}
+
+.email-div{
+    width: 20px;
+    transform: rotate(270deg);
+}
+
+.email-text{
+    font-size: 16px;
+    font-family: $fontSansSerif;
+    font-weight: 300;
+    color: $pink;
+    text-decoration: none;
+    transition: 200ms ease-in-out;
+
+    &:hover{
+        font-size: 17px;
+        color: $navyBlue;
+    }
+}
+
+.side-links{
+    right: 20px;
+}
+
+.links {
+    list-style: none;
+}
+
+.link-image{
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+
+    &:hover{
+        transform: scale(1.2);
+        stroke: $navyBlue;
+    }
+}
+
+.line{
+    position: relative;
+    background-color: $pink;
+    height: 150px;
+    width: 2px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+// =================TITLE STYLING ALL=================
+
+.title-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.title{
+    color: $navyBlue;
+    font-family: $fontCursive;
+    font-size: 40px;
+}
+
+.title-number{
+    font-family: $fontSansSerif;
+    font-size: 30px;
+}
+
+.title-line{
+    position: relative;
+    width: 200px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: $navyBlue;
+}
+
+// =================MAIN PAGE=================
+// =================NAV BAR=================
+.sub-line{
+    height: 2px;
+    width: 20vw;
+    position: absolute;
+    top: 313px;
+    margin-top: 10px;
+    background-color: $pink;
+    border-radius: 5px;
+} //????
+
+.nav-bar {
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $fontSansSerif;
+    font-size: 1rem;
+
+}
+
+.nav-brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.brand-pic {
+    height: 40px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.brand-name {
+    font-weight: 500;
+    color: $navyBlue;
+}
+
+.nav-elements {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-number {
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.nav-item {
+    margin-right: 20px;
+    font-weight: 500;
+
+    a {
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        color: $navyBlue;
+    }
+}
+
+.nav-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: linear-gradient(to left, $ivory 50%, $pink 50%) right;
+    background-size: 201%;
+    transition: 200ms ease-in-out;
+
+    &:hover {
+        background-position: left;
+    }
+
+    .nav-resume-link {
+        text-decoration: none;
+        background-color: transparent;
+        color: $navyBlue;
+    }
+}
+// ======================================
+// =================HOME=================
+.home{
+    height: 100vh;
+    background-color: $beige;
+}
+
+.hero{
+    width: 65%;
+}
+
+.sub-heading {
+    color: $pink;
+    text-transform: uppercase;
+    font-family: $fontSansSerif;
+    font-weight: 500;
+    font-size: clamp(16px, 8vw, 18px);
+    padding-top: 200px;
+}
+
+.main-heading {
+    font-family: $fontCursive;
+    color: #172c66;
+    font-size: clamp(35px, 7vw, 70px);
+    font-weight: 100;
+    padding-top: 20px;
+}
+
+.text-heading {
+    font-family: $fontSansSerif;
+    font-weight: 300;
+    color: #172c66;
+    font-size: 25px;
+    letter-spacing: -1px;
+    padding-top: 20px;
+}
+// ======================================
+// ===============PROJECTS===============
+
+.projects{
+    height: fit-content;
+    background-color: $ivory;
+    padding: 10%;
+}
+
+.project-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.project-one,
+.project-two,
+.project-three{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.left{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+}
+
+.right {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: right;
+}
+
+.pink {
+    background-image: linear-gradient(45deg, $lilac, $pink);
+    box-shadow: 3px 3px 30px $shadow;
+}
+
+.title-pink{
+    color: $pink;
+    text-shadow: 1px 1px 5px $beige;
+}
+
+.yellow {
+    background-image: linear-gradient(45deg, $yolk, $peach);
+    box-shadow: 3px 3px 30px $shadow;
+}
+
+.title-yellow{
+    color: $shadow;
+    text-shadow: 1px 1px 5px $beige;
+}
+
+.green {
+    background-image: linear-gradient(45deg, $skyBlue, $cyan);
+    box-shadow: 3px 3px 30px $shadow;
+}
+
+.title-green{
+    color: $skyBlue;
+    text-shadow: 1px 1px 5px $beige;
+}
+
+.left-img {
+    position: relative;
+    z-index: 2;
+    transform: translate(8%, 15%);
+    width: 300px;
+    height: 350px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+
+    img{
+        width: 150%;
+        height: auto;
+        transform: translate(20%, 20%);
+        }
+}
+// ======================================
+
+.right-title{
+    font-family: $fontCursive;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.right-tech{
+    font-family: $fontMono;
+    font-size: 14px;
+    color: $navyBlue;
+    font-weight: 300;
+    margin-bottom: 10px;
+
+}
+
+.right-info{
+    font-family: $fontSansSerif;
+    font-size: 18px;
+    font-weight: 300;
+    color: $navyBlue;
+}
+
+// ======================================
+// ===============SKILLS===============
+
+.skills{
+    height: fit-content;
+    background-color: $peach;
+    padding: 10%;
+}
+
+.skills-container{
+    background-color: $ivory;
+    border-radius: 5px;
+    padding: 40px;
+    margin: auto;
+    box-shadow: 3px 3px 50px $shadow;
+}
+
+// ======================================
+// ===============CONTACT===============
+
+.contact{
+    height: fit-content;
+    background-color: $beige;
+    padding: 10%;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-image: linear-gradient(45deg, $yolk, $peach);
+    box-shadow: 3px 3px 30px $shadow;
+    padding: 5%;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.contact-text{
+    width: 45%;
+    text-align: left;
+    font-family: $fontSansSerif;
+    font-size: 20px;
+    color: $navyBlue;
+    font-weight: 300;
+}
+
+.contact-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: linear-gradient(to left, $beige 50%, $yellow 50%) right;
+    background-size: 201%;
+    transition: 200ms ease-in-out;
+
+    &:hover {
+        background-position: left;
+    }
+}
+
+.contact-link{
+    text-decoration: none;
+    font-family: $fontSansSerif;
+    text-align: center;
+    color: $navyBlue;
+    font-size: 20px;
+
+}
+
