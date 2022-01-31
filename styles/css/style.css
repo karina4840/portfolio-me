@@ -315,22 +315,29 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 100px;
 }
 
 .left {
-  width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  width: 50%;
+  position: relative;
+}
+
+.left::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0%;
+  top: -10%;
+  right: 50%;
+  height: 300px;
+  -webkit-box-shadow: 3px 3px 30px #d3b09e;
+          box-shadow: 3px 3px 30px #d3b09e;
+  border-radius: 5px;
 }
 
 .right {
-  width: 40%;
-  height: auto;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -338,22 +345,25 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-line-pack: right;
       align-content: right;
 }
 
-.pink {
+.yellow::before {
+  background-image: linear-gradient(45deg, #f0dd88, #f3d2c1);
+}
+
+.pink::before {
   background-image: linear-gradient(45deg, #d3bcee, #e794b4);
   -webkit-box-shadow: 3px 3px 30px #d3b09e;
           box-shadow: 3px 3px 30px #d3b09e;
 }
 
-.title-pink {
-  color: #e794b4;
-}
-
-.yellow {
-  background-image: linear-gradient(45deg, #f0dd88, #f3d2c1);
+.green::before {
+  background-image: linear-gradient(45deg, #889bdb, #7cd1c3);
   -webkit-box-shadow: 3px 3px 30px #d3b09e;
           box-shadow: 3px 3px 30px #d3b09e;
 }
@@ -362,32 +372,19 @@
   color: #e09f7f;
 }
 
-.green {
-  background-image: linear-gradient(45deg, #889bdb, #7cd1c3);
-  -webkit-box-shadow: 3px 3px 30px #d3b09e;
-          box-shadow: 3px 3px 30px #d3b09e;
+.title-pink {
+  color: #e794b4;
 }
 
 .title-green {
   color: #889bdb;
 }
 
-.left-img {
+.left-proj-img {
+  height: 250px;
   position: relative;
   z-index: 2;
-  -webkit-transform: translate(8%, 15%);
-          transform: translate(8%, 15%);
-  width: 300px;
-  height: 350px;
-  margin-bottom: 50px;
-  border-radius: 5px;
-}
-
-.left-img img {
-  width: 150%;
-  height: auto;
-  -webkit-transform: translate(20%, 20%);
-          transform: translate(20%, 20%);
+  right: -25%;
 }
 
 .right-title {

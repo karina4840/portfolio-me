@@ -263,33 +263,45 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .left{
-    width: 60%;
-    display: flex;
-    flex-direction: row;
+    width: 50%;
+    position: relative;
+
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0%;
+        top: -10%;
+        right: 50%;
+        height: 300px;
+        box-shadow: 3px 3px 30px $shadow;
+        border-radius: 5px;
+    }
 }
 
 .right {
-    width: 40%;
-    height: auto;
+    width: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-content: right;
 }
 
-.pink {
+.yellow::before{
+    background-image: linear-gradient(45deg, $yolk, $peach);
+}
+
+.pink::before {
     background-image: linear-gradient(45deg, $lilac, $pink);
     box-shadow: 3px 3px 30px $shadow;
 }
 
-.title-pink{
-    color: $pink;
-}
-
-.yellow {
-    background-image: linear-gradient(45deg, $yolk, $peach);
+.green::before {
+    background-image: linear-gradient(45deg, $skyBlue, $cyan);
     box-shadow: 3px 3px 30px $shadow;
 }
 
@@ -297,29 +309,19 @@
     color: $orange;
 }
 
-.green {
-    background-image: linear-gradient(45deg, $skyBlue, $cyan);
-    box-shadow: 3px 3px 30px $shadow;
+.title-pink{
+    color: $pink;
 }
 
 .title-green{
     color: $skyBlue;
 }
 
-.left-img {
+.left-proj-img {
+    height: 250px;
     position: relative;
     z-index: 2;
-    transform: translate(8%, 15%);
-    width: 300px;
-    height: 350px;
-    margin-bottom: 50px;
-    border-radius: 5px;
-
-    img{
-        width: 150%;
-        height: auto;
-        transform: translate(20%, 20%);
-        }
+    right: -25%;
 }
 // ======================================
 
