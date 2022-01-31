@@ -202,8 +202,8 @@
 
 .underline-hidden {
   width: 100%;
-  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #f3d2c1), color-stop(50%, #f582ae)) right;
-  background: linear-gradient(to left, #f3d2c1 50%, #f582ae 50%) right;
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #f3d2c1), color-stop(50%, #e794b4)) right;
+  background: linear-gradient(to left, #f3d2c1 50%, #e794b4 50%) right;
   background-size: 200% 4px;
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -218,8 +218,8 @@
 .nav-button {
   padding: 10px 20px;
   border-radius: 5px;
-  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #f3d2c1), color-stop(50%, #f582ae)) right;
-  background: linear-gradient(to left, #f3d2c1 50%, #f582ae 50%) right;
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #f3d2c1), color-stop(50%, #e794b4)) right;
+  background: linear-gradient(to left, #f3d2c1 50%, #e794b4 50%) right;
   background-size: 201%;
   -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
@@ -343,17 +343,17 @@
 }
 
 .pink {
-  background-image: linear-gradient(45deg, #b095cfa6, #f582ae);
+  background-image: linear-gradient(45deg, #d3bcee, #e794b4);
   -webkit-box-shadow: 3px 3px 30px #d3b09e;
           box-shadow: 3px 3px 30px #d3b09e;
 }
 
 .title-pink {
-  color: #f582ae;
+  color: #e794b4;
 }
 
 .yellow {
-  background-image: linear-gradient(45deg, #f3d13ba6, #f3d2c1);
+  background-image: linear-gradient(45deg, #f0dd88, #f3d2c1);
   -webkit-box-shadow: 3px 3px 30px #d3b09e;
           box-shadow: 3px 3px 30px #d3b09e;
 }
@@ -363,13 +363,13 @@
 }
 
 .green {
-  background-image: linear-gradient(45deg, #73b3bd, #73ddb6a6);
+  background-image: linear-gradient(45deg, #889bdb, #7cd1c3);
   -webkit-box-shadow: 3px 3px 30px #d3b09e;
           box-shadow: 3px 3px 30px #d3b09e;
 }
 
 .title-green {
-  color: #73b3bd;
+  color: #889bdb;
 }
 
 .left-img {
@@ -447,7 +447,7 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background-image: linear-gradient(45deg, #f3d13ba6, #f3d2c1);
+  background-image: linear-gradient(45deg, #f0dd88, #f3d2c1);
   -webkit-box-shadow: 3px 3px 30px #d3b09e;
           box-shadow: 3px 3px 30px #d3b09e;
   padding: 5%;
@@ -479,8 +479,8 @@
   padding: 20px 30px;
   cursor: pointer;
   border-radius: 5px;
-  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #fef6e4), color-stop(50%, #ffedb3)) right;
-  background: linear-gradient(to left, #fef6e4 50%, #ffedb3 50%) right;
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #fef6e4), color-stop(50%, #e2d197)) right;
+  background: linear-gradient(to left, #fef6e4 50%, #e2d197 50%) right;
   background-size: 201%;
   -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
