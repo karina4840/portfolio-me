@@ -36,7 +36,7 @@
     font-size: 16px;
     font-family: $fontSansSerif;
     font-weight: 300;
-    color: $pink;
+    color: $hotPink;
     text-decoration: none;
     transition: 200ms ease-in-out;
 
@@ -67,7 +67,7 @@
 
 .line{
     position: relative;
-    background-color: $pink;
+    background-color: $hotPink;
     height: 150px;
     width: 2px;
     border-radius: 5px;
@@ -105,15 +105,6 @@
 
 // =================MAIN PAGE=================
 // =================NAV BAR=================
-.sub-line{
-    height: 2px;
-    width: 20vw;
-    position: absolute;
-    top: 313px;
-    margin-top: 10px;
-    background-color: $pink;
-    border-radius: 5px;
-} 
 
 .nav-bar {
     width: 100%;
@@ -131,7 +122,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-
 }
 
 .brand-pic {
@@ -173,9 +163,9 @@
 }
 
 .underline-hidden {
-    width: 90%;
+    width: 100%;
     background: linear-gradient(to left, $peach 50%, $pink 50%) right;
-    background-size: 201% 4px;
+    background-size: 200% 4px;
     background-position: bottom right;
     background-repeat: no-repeat;
     transition: 200ms ease-in-out;
@@ -215,13 +205,23 @@
 }
 
 .sub-heading {
-    color: $pink;
+    color: $hotPink;
     text-transform: uppercase;
     font-family: $fontSansSerif;
     font-weight: 500;
     font-size: clamp(16px, 8vw, 18px);
     padding-top: 200px;
 }
+
+.sub-line{
+    height: 2px;
+    width: 20vw;
+    position: absolute;
+    top: 313px;
+    margin-top: 10px;
+    background-color: $hotPink;
+    border-radius: 5px;
+} 
 
 .main-heading {
     font-family: $fontCursive;
@@ -256,7 +256,10 @@
 
 .project-one,
 .project-two,
-.project-three{
+.project-three,
+.project-four,
+.project-five,
+.project-six {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -283,7 +286,6 @@
 
 .title-pink{
     color: $pink;
-    text-shadow: 1px 1px 5px $beige;
 }
 
 .yellow {
@@ -292,8 +294,7 @@
 }
 
 .title-yellow{
-    color: $shadow;
-    text-shadow: 1px 1px 5px $beige;
+    color: $orange;
 }
 
 .green {
@@ -303,7 +304,6 @@
 
 .title-green{
     color: $skyBlue;
-    text-shadow: 1px 1px 5px $beige;
 }
 
 .left-img {
