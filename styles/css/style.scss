@@ -215,9 +215,7 @@
 
 .sub-line{
     height: 2px;
-    width: 20vw;
-    position: absolute;
-    top: 313px;
+    width: clamp(40vw,30vw,20vw);
     margin-top: 10px;
     background-color: $hotPink;
     border-radius: 5px;
@@ -235,7 +233,7 @@
     font-family: $fontSansSerif;
     font-weight: 300;
     color: #172c66;
-    font-size: 25px;
+    font-size: 28px;
     letter-spacing: -1px;
     padding-top: 20px;
 }
@@ -252,6 +250,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-top: 75px;
 }
 
 .project-one,
@@ -364,6 +363,54 @@
     box-shadow: 3px 3px 50px $shadow;
 }
 
+.skills-logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.skills-icon-box{
+    width: 165px;
+    padding: 15px;
+    text-align: center;
+}
+
+.skills-icon{
+    color: $skyBlue;
+    font-size: 60px;
+}
+
+.skills-icon-title{
+    color: $navyBlue;
+    font-family: $fontMono;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.skills-currently-working{
+    margin-top: 70px;
+    width: clamp(70vw, 50vw, 100vw);
+}
+
+.skills-working-title{
+    font-family: $fontCursive;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: $navyBlue;
+    text-decoration: underline;
+    text-underline-offset: -35px;
+    text-decoration-thickness: 1px;
+}
+
+.skills-working-text{
+    font-family: $fontSansSerif;
+    font-weight: 300;
+    font-size: 18px;
+    color: $navyBlue;
+}
+
 // ======================================
 // ===============CONTACT===============
 
@@ -377,7 +424,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-image: linear-gradient(45deg, $yolk, $peach);
+    background-image: linear-gradient(45deg, $yolk, $pink);
     box-shadow: 3px 3px 30px $shadow;
     padding: 5%;
     border-radius: 5px;
@@ -400,7 +447,7 @@
     padding: 20px 30px;
     cursor: pointer;
     border-radius: 5px;
-    background: linear-gradient(to left, $beige 50%, $yellow 50%) right;
+    background: linear-gradient(to left, $beige 50%, $lilac 50%) right;
     background-size: 201%;
     transition: 200ms ease-in-out;
 
@@ -416,4 +463,25 @@
     color: $navyBlue;
     font-size: 20px;
 
+}
+
+// ======================================
+// ================FOOTER================
+
+.footer{
+    position: relative;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: $lilac;
+}
+
+.footer-text,
+#footer-year{
+    font-family: $fontSansSerif;
+    font-weight: 300;
+    font-size: 14px;
+    color: $navyBlue;
 }

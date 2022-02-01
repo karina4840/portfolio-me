@@ -14,4 +14,8 @@ function changeText() {
         title.fadeIn();
     }); 
 
-}
+};
+
+
+
+

@@ -202,8 +202,8 @@
 
 .underline-hidden {
   width: 100%;
-  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #f3d2c1), color-stop(50%, #e794b4)) right;
-  background: linear-gradient(to left, #f3d2c1 50%, #e794b4 50%) right;
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #f3d2c1), color-stop(50%, #f097b9)) right;
+  background: linear-gradient(to left, #f3d2c1 50%, #f097b9 50%) right;
   background-size: 200% 4px;
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -218,8 +218,8 @@
 .nav-button {
   padding: 10px 20px;
   border-radius: 5px;
-  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #f3d2c1), color-stop(50%, #e794b4)) right;
-  background: linear-gradient(to left, #f3d2c1 50%, #e794b4 50%) right;
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #f3d2c1), color-stop(50%, #f097b9)) right;
+  background: linear-gradient(to left, #f3d2c1 50%, #f097b9 50%) right;
   background-size: 201%;
   -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
@@ -255,9 +255,7 @@
 
 .sub-line {
   height: 2px;
-  width: 20vw;
-  position: absolute;
-  top: 313px;
+  width: clamp(40vw, 30vw, 20vw);
   margin-top: 10px;
   background-color: #f06988;
   border-radius: 5px;
@@ -275,7 +273,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   color: #172c66;
-  font-size: 25px;
+  font-size: 28px;
   letter-spacing: -1px;
   padding-top: 20px;
 }
@@ -297,6 +295,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  margin-top: 75px;
 }
 
 .project-one,
@@ -357,7 +356,7 @@
 }
 
 .pink::before {
-  background-image: linear-gradient(45deg, #d3bcee, #e794b4);
+  background-image: linear-gradient(45deg, #d3bcee, #f097b9);
   -webkit-box-shadow: 3px 3px 30px #d3b09e;
           box-shadow: 3px 3px 30px #d3b09e;
 }
@@ -373,7 +372,7 @@
 }
 
 .title-pink {
-  color: #e794b4;
+  color: #f097b9;
 }
 
 .title-green {
@@ -425,6 +424,61 @@
           box-shadow: 3px 3px 50px #d3b09e;
 }
 
+.skills-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.skills-icon-box {
+  width: 165px;
+  padding: 15px;
+  text-align: center;
+}
+
+.skills-icon {
+  color: #889bdb;
+  font-size: 60px;
+}
+
+.skills-icon-title {
+  color: #172c66;
+  font-family: "Red Hat Mono", monospace;
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+.skills-currently-working {
+  margin-top: 70px;
+  width: clamp(70vw, 50vw, 100vw);
+}
+
+.skills-working-title {
+  font-family: "Yeseva One", cursive;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #172c66;
+  text-decoration: underline;
+  text-underline-offset: -35px;
+  text-decoration-thickness: 1px;
+}
+
+.skills-working-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #172c66;
+}
+
 .contact {
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -444,7 +498,7 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background-image: linear-gradient(45deg, #f0dd88, #f3d2c1);
+  background-image: linear-gradient(45deg, #f0dd88, #f097b9);
   -webkit-box-shadow: 3px 3px 30px #d3b09e;
           box-shadow: 3px 3px 30px #d3b09e;
   padding: 5%;
@@ -476,8 +530,8 @@
   padding: 20px 30px;
   cursor: pointer;
   border-radius: 5px;
-  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #fef6e4), color-stop(50%, #e2d197)) right;
-  background: linear-gradient(to left, #fef6e4 50%, #e2d197 50%) right;
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #fef6e4), color-stop(50%, #d3bcee)) right;
+  background: linear-gradient(to left, #fef6e4 50%, #d3bcee 50%) right;
   background-size: 201%;
   -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
@@ -493,5 +547,29 @@
   text-align: center;
   color: #172c66;
   font-size: 20px;
+}
+
+.footer {
+  position: relative;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  background-color: #d3bcee;
+}
+
+.footer-text,
+#footer-year {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #172c66;
 }
 /*# sourceMappingURL=style.css.map */
