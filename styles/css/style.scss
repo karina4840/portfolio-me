@@ -14,7 +14,7 @@
 }
 
 // =================CONTACT SIDES=================
-
+// =====================LEFT======================
 .contact-sides{
     position: fixed;
     bottom: 0;
@@ -46,6 +46,7 @@
     }
 }
 
+// =====================RIGHT======================
 .side-links{
     right: 20px;
 }
@@ -74,7 +75,7 @@
     margin-top: 15px;
 }
 
-// ========TITLE STYLING ALL SECTIONS========
+// ========TITLE STYLING FOR ALL SECTIONS========
 
 .title-container{
     display: flex;
@@ -193,7 +194,6 @@
     }
 }
 
-// ======================================
 // =================HOME=================
 .home{
     height: 100vh;
@@ -237,9 +237,8 @@
     letter-spacing: -1px;
     padding-top: 20px;
 }
-// ======================================
-// ===============PROJECTS===============
 
+// ===============PROJECTS PAGE===============
 .projects{
     height: fit-content;
     background-color: $ivory;
@@ -290,6 +289,7 @@
     align-content: right;
 }
 
+//===================LEFT SIDE===================
 .yellow::before{
     background-image: linear-gradient(45deg, $yolk, $peach);
 }
@@ -322,8 +322,8 @@
     z-index: 2;
     right: -25%;
 }
-// ======================================
 
+//===================RIGHT SIDE===================
 .right-title{
     font-family: $fontCursive;
     font-size: 24px;
@@ -346,8 +346,7 @@
     color: $navyBlue;
 }
 
-// ======================================
-// ===============SKILLS===============
+// ===============SKILLS PAGE===============
 
 .skills{
     height: fit-content;
@@ -411,7 +410,7 @@
     color: $navyBlue;
 }
 
-// ======================================
+// ===================SKILL ICONS STYLING===================
 
 .html:hover{
     color: $orange;
@@ -448,8 +447,8 @@
 .bootstrap:hover{
     color: $lilac;
 }
-// ======================================
-// ===============CONTACT===============
+
+// ===============CONTACT PAGE===============
 
 .contact{
     height: fit-content;
@@ -502,9 +501,7 @@
 
 }
 
-// ======================================
 // ================FOOTER================
-
 .footer{
     position: relative;
     z-index: -1;
