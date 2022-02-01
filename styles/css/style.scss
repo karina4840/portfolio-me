@@ -308,7 +308,7 @@
     color: $orange;
 }
 
-.title-pink{
+.title-pink {
     color: $pink;
 }
 
@@ -324,10 +324,55 @@
 }
 
 //===================RIGHT SIDE===================
+.project-link-one,
+.project-link-four {
+    text-decoration: none;
+    width: 65%;
+    background: linear-gradient(to left, $ivory 50%, $orange 50%) right;
+    background-size: 200% 1px;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    transition: 300ms ease-in-out;
+
+    &:hover {
+        background-position: bottom left;
+    }
+}
+
+.project-link-two,
+.project-link-five {
+    text-decoration: none;
+    width: 65%;
+    background: linear-gradient(to left, $ivory 50%, $pink 50%) right;
+    background-size: 200% 1px;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    transition: 300ms ease-in-out;
+
+    &:hover {
+        background-position: bottom left;
+    }
+}
+
+.project-link-three,
+.project-link-six{
+    text-decoration: none;
+    width: 65%;
+    background: linear-gradient(to left, $ivory 50%, $skyBlue 50%) right;
+    background-size: 200% 1px;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    transition: 300ms ease-in-out;
+
+    &:hover {
+        background-position: bottom left;
+    }
+}
+
 .right-title{
     font-family: $fontCursive;
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .right-tech{
@@ -336,6 +381,7 @@
     color: $navyBlue;
     font-weight: 300;
     margin-bottom: 10px;
+    margin-top: 20px;
 
 }
 
