@@ -412,6 +412,43 @@
 }
 
 // ======================================
+
+.html:hover{
+    color: $orange;
+}
+
+.css:hover, .wordpress:hover{
+    color: $blue;
+}
+
+.js:hover{
+    color: $yellow;
+}
+
+.jquery:hover{
+    color: $navyBlue;
+}
+
+.react:hover{
+    color: $cyan;
+}
+
+.sass:hover, .figma:hover{
+    color: $hotPink;
+}
+
+.git:hover{
+    color: $orange;
+}
+
+.mongo:hover,.node:hover{
+    color: $green;
+}
+
+.bootstrap:hover{
+    color: $lilac;
+}
+// ======================================
 // ===============CONTACT===============
 
 .contact{

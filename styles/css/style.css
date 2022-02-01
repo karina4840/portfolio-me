@@ -479,6 +479,42 @@
   color: #172c66;
 }
 
+.html:hover {
+  color: #e09f7f;
+}
+
+.css:hover, .wordpress:hover {
+  color: #2268a1;
+}
+
+.js:hover {
+  color: #f1da8f;
+}
+
+.jquery:hover {
+  color: #172c66;
+}
+
+.react:hover {
+  color: #7cd1c3;
+}
+
+.sass:hover, .figma:hover {
+  color: #f06988;
+}
+
+.git:hover {
+  color: #e09f7f;
+}
+
+.mongo:hover, .node:hover {
+  color: #7ece99;
+}
+
+.bootstrap:hover {
+  color: #d3bcee;
+}
+
 .contact {
   height: -webkit-fit-content;
   height: -moz-fit-content;
