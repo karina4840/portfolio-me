@@ -30,7 +30,7 @@
             <a class="email-text" href="mailto:karina4840@gmail.com">karina4840@gmail.com</a>
         </div>
         <div class="line"></div>
-    </div>
+    </div> 
 
      <!-- =================LINKS RIGHT================= -->
     <div class="contact-sides side-links">
@@ -60,25 +60,37 @@
                 <img src="./styles/img/me.png" alt="" class="brand-pic">
                 <p class="brand-name">Karina I.</p>
             </div>
-
-            <ul class="nav-elements">
-                <li class="nav-item underline-hidden">
+ 
+            <ul class="nav-elements" id="nav-elements-id">
+                <li class="nav-item underline-hidden" id="nav-item-responsive">
                     <a href="#home"><span class="nav-number">01</span>home</a>
                 </li>
-                <li class="nav-item underline-hidden">
+                <li class="nav-item underline-hidden" id="nav-item-responsive">
                     <a href="#projects"><span class="nav-number">02</span>projects</a>
                 </li>
-                <li class="nav-item underline-hidden">
+                <li class="nav-item underline-hidden" id="nav-item-responsive">
                     <a href="#skills"><span class="nav-number">03</span>skills</a>
                 </li>
-                <li class="nav-item underline-hidden">
+                <li class="nav-item underline-hidden" id="nav-item-responsive">
                     <a href="#contact"><span class="nav-number">04</span>contact</a>
                 </li>
-                <div class="nav-button">
+                <div class="nav-button" id="nav-item-responsive">
                     <a class="nav-resume-link" href="./extras/resume-karina4840.pdf" target="_blank">Résumé</a>
                 </div>
                 </li>
             </ul>
+
+            <div class="menu-button">
+                    <a>
+                        <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                            stroke="#f06988" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-menu">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </a>
+                </div>
         </div>
 
         <div class="hero">
@@ -89,7 +101,7 @@
         </div>
 
     </div>
-
+ 
     <!-- =================PROJECTS================= -->
     <div class="projects" id="projects">
         <div class="title-container">
@@ -140,7 +152,7 @@
 
                 <div class="right">
                     <a href="https://daily-journal-site-4840.herokuapp.com/" target="_blank" class="project-link-three"><h1 class="right-title title-green">Daily Journal Blog</h1></a>
-                    <p class="right-tech">Javascript Node.js express EJS Bootstrap Heroku</p>
+                    <p class="right-tech">Javascript Node.js express MongoDB EJS Bootstrap Heroku</p>
                     <p class="right-info">A blog-like page that allows you to compose a post. Posts are displayed on the
                         main page in a short format and each will have its own page generated on click. Styled with EJS
                         and bootstrap layout components, deployed with Heroku.
@@ -156,8 +168,8 @@
                 </div>
 
                 <div class="right">
-                    <a href="https://to-do-list-4840.herokuapp.com/" target="_blank" class="project-link-four"><h1 class="right-title title-yellow">To Do Application</h1></a>
-                    <p class="right-tech">Node.js express EJS Heroku</p>
+                    <a href="https://to-do-4840.herokuapp.com/" target="_blank" class="project-link-four"><h1 class="right-title title-yellow">To Do Application</h1></a>
+                    <p class="right-tech">Node.js express MongoDB EJS Heroku</p>
                     <p class="right-info">Stay organised and manage your day-to-day with the To Do App. Two different
                         lists can store reminders of Today or Work. Styled with EJS layout components, deployed with
                         Heroku.
@@ -310,6 +322,8 @@
 </body>
 
 </html>
+
+
 
 
 

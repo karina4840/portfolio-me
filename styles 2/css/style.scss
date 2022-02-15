@@ -15,7 +15,7 @@
 
 // =================CONTACT SIDES=================
 // =====================LEFT======================
-.contact-sides{
+.contact-sides {
     position: fixed;
     bottom: 0;
     display: flex;
@@ -23,16 +23,16 @@
     align-items: center;
 }
 
-.side-email{
+.side-email {
     left: 20px;
 }
 
-.email-div{
+.email-div {
     width: 20px;
     transform: rotate(270deg);
 }
 
-.email-text{
+.email-text {
     font-size: 16px;
     font-family: $fontSansSerif;
     font-weight: 300;
@@ -40,14 +40,14 @@
     text-decoration: none;
     transition: 200ms ease-in-out;
 
-    &:hover{
+    &:hover {
         font-size: 17px;
         color: $navyBlue;
     }
 }
 
 // =====================RIGHT======================
-.side-links{
+.side-links {
     right: 20px;
 }
 
@@ -55,18 +55,18 @@
     list-style: none;
 }
 
-.link-image{
+.link-image {
     margin-top: 15px;
     cursor: pointer;
     transition: 200ms ease-in-out;
 
-    &:hover{
+    &:hover {
         transform: scale(1.2);
         stroke: $navyBlue;
     }
 }
 
-.line{
+.line {
     position: relative;
     background-color: $hotPink;
     height: 150px;
@@ -77,7 +77,7 @@
 
 // ========TITLE STYLING FOR ALL SECTIONS========
 
-.title-container{
+.title-container {
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -85,18 +85,18 @@
     margin-bottom: 50px;
 }
 
-.title{
+.title {
     color: $navyBlue;
     font-family: $fontCursive;
     font-size: 40px;
 }
 
-.title-number{
+.title-number {
     font-family: $fontSansSerif;
     font-size: 30px;
 }
 
-.title-line{
+.title-line {
     position: relative;
     width: 200px;
     height: 1px;
@@ -132,6 +132,7 @@
 }
 
 .brand-name {
+    font-size: 18px;
     font-weight: 500;
     color: $navyBlue;
 }
@@ -141,6 +142,7 @@
     flex-direction: row;
     list-style: none;
     align-items: center;
+    overflow: hidden;
 }
 
 .nav-number {
@@ -166,7 +168,7 @@
 .underline-hidden {
     width: 100%;
     background: linear-gradient(to left, $peach 50%, $pink 50%) right;
-    background-size: 200% 4px;
+    background-size: 200% 2px;
     background-position: bottom right;
     background-repeat: no-repeat;
     transition: 200ms ease-in-out;
@@ -174,7 +176,7 @@
     &:hover {
         background-position: bottom left;
     }
-}   
+}
 
 .nav-button {
     padding: 10px 20px;
@@ -194,13 +196,18 @@
     }
 }
 
+.menu-button {
+    display: none;
+}
+
+
 // =================HOME=================
-.home{
+.home {
     height: 100vh;
     background-color: $beige;
 }
 
-.hero{
+.hero {
     width: 65%;
 }
 
@@ -213,18 +220,17 @@
     padding-top: 200px;
 }
 
-.sub-line{
+.sub-line {
     height: 2px;
-    width: clamp(40vw,30vw,20vw);
+    width: clamp(40vw, 30vw, 20vw);
     margin-top: 10px;
     background-color: $hotPink;
-    border-radius: 5px;
-} 
+}
 
 .main-heading {
     font-family: $fontCursive;
-    color: #172c66;
-    font-size: clamp(35px, 7vw, 70px);
+    color: $navyBlue;
+    font-size: clamp(35px, 7vw, 50px);
     font-weight: 100;
     padding-top: 20px;
 }
@@ -232,20 +238,20 @@
 .text-heading {
     font-family: $fontSansSerif;
     font-weight: 300;
-    color: #172c66;
+    color: $navyBlue;
     font-size: 28px;
     letter-spacing: -1px;
     padding-top: 20px;
 }
 
 // ===============PROJECTS PAGE===============
-.projects{
+.projects {
     height: fit-content;
     background-color: $ivory;
     padding: 10%;
 }
 
-.project-container{
+.project-container {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -264,18 +270,19 @@
     margin-bottom: 100px;
 }
 
-.left{
+.left {
     width: 50%;
     position: relative;
 
-    &::before{
+    &::before {
         content: "";
         display: block;
         position: absolute;
         left: 0%;
         top: -10%;
         right: 50%;
-        height: 300px;
+        height: 250px;
+        width: 250px;
         box-shadow: 3px 3px 30px $shadow;
         border-radius: 5px;
     }
@@ -290,7 +297,7 @@
 }
 
 //===================LEFT SIDE===================
-.yellow::before{
+.yellow::before {
     background-image: linear-gradient(45deg, $yolk, $peach);
 }
 
@@ -304,7 +311,7 @@
     box-shadow: 3px 3px 30px $shadow;
 }
 
-.title-yellow{
+.title-yellow {
     color: $orange;
 }
 
@@ -312,14 +319,15 @@
     color: $pink;
 }
 
-.title-green{
+.title-green {
     color: $skyBlue;
 }
 
 .left-proj-img {
-    height: 250px;
+    height: 220px;
     position: relative;
     z-index: 2;
+    top: -5px;
     right: -25%;
 }
 
@@ -355,7 +363,7 @@
 }
 
 .project-link-three,
-.project-link-six{
+.project-link-six {
     text-decoration: none;
     width: 65%;
     background: linear-gradient(to left, $ivory 50%, $skyBlue 50%) right;
@@ -369,13 +377,13 @@
     }
 }
 
-.right-title{
+.right-title {
     font-family: $fontCursive;
     font-size: 24px;
     margin-bottom: 5px;
 }
 
-.right-tech{
+.right-tech {
     font-family: $fontMono;
     font-size: 14px;
     color: $navyBlue;
@@ -385,7 +393,7 @@
 
 }
 
-.right-info{
+.right-info {
     font-family: $fontSansSerif;
     font-size: 18px;
     font-weight: 300;
@@ -394,13 +402,13 @@
 
 // ===============SKILLS PAGE===============
 
-.skills{
+.skills {
     height: fit-content;
     background-color: $peach;
     padding: 10%;
 }
 
-.skills-container{
+.skills-container {
     background-color: $ivory;
     border-radius: 5px;
     padding: 40px;
@@ -408,7 +416,7 @@
     box-shadow: 3px 3px 50px $shadow;
 }
 
-.skills-logo{
+.skills-logo {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -416,30 +424,30 @@
     justify-items: center;
 }
 
-.skills-icon-box{
+.skills-icon-box {
     width: 165px;
     padding: 15px;
     text-align: center;
 }
 
-.skills-icon{
+.skills-icon {
     color: $skyBlue;
     font-size: 60px;
 }
 
-.skills-icon-title{
+.skills-icon-title {
     color: $navyBlue;
     font-family: $fontMono;
     font-weight: 300;
     margin-top: 15px;
 }
 
-.skills-currently-working{
+.skills-currently-working {
     margin-top: 70px;
     width: clamp(70vw, 50vw, 100vw);
 }
 
-.skills-working-title{
+.skills-working-title {
     font-family: $fontCursive;
     font-size: 20px;
     margin-bottom: 10px;
@@ -449,7 +457,7 @@
     text-decoration-thickness: 1px;
 }
 
-.skills-working-text{
+.skills-working-text {
     font-family: $fontSansSerif;
     font-weight: 300;
     font-size: 18px;
@@ -458,62 +466,65 @@
 
 // ===================SKILL ICONS STYLING===================
 
-.html:hover{
+.html:hover {
     color: $orange;
 }
 
-.css:hover, .wordpress:hover{
+.css:hover,
+.wordpress:hover {
     color: $blue;
 }
 
-.js:hover{
+.js:hover {
     color: $yellow;
 }
 
-.jquery:hover{
+.jquery:hover {
     color: $navyBlue;
 }
 
-.react:hover{
+.react:hover {
     color: $cyan;
 }
 
-.sass:hover, .figma:hover{
+.sass:hover,
+.figma:hover {
     color: $hotPink;
 }
 
-.git:hover{
+.git:hover {
     color: $orange;
 }
 
-.mongo:hover,.node:hover{
+.mongo:hover,
+.node:hover {
     color: $green;
 }
 
-.bootstrap:hover{
+.bootstrap:hover {
     color: $lilac;
 }
 
 // ===============CONTACT PAGE===============
 
-.contact{
+.contact {
     height: fit-content;
     background-color: $beige;
     padding: 10%;
 }
 
-.contact-container{
+.contact-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-image: linear-gradient(45deg, $yolk, $pink);
+    background-image: linear-gradient(45deg, $pink, $yolk);
     box-shadow: 3px 3px 30px $shadow;
     padding: 5%;
     border-radius: 5px;
     align-items: center;
 }
 
-.contact-text{
+.contact-text {
     width: 45%;
     text-align: left;
     font-family: $fontSansSerif;
@@ -529,7 +540,7 @@
     padding: 20px 30px;
     cursor: pointer;
     border-radius: 5px;
-    background: linear-gradient(to left, $beige 50%, $lilac 50%) right;
+    background: linear-gradient(to left, $beige 50%, $pink 50%) right;
     background-size: 201%;
     transition: 200ms ease-in-out;
 
@@ -538,7 +549,7 @@
     }
 }
 
-.contact-link{
+.contact-link {
     text-decoration: none;
     font-family: $fontSansSerif;
     text-align: center;
@@ -548,20 +559,385 @@
 }
 
 // ================FOOTER================
-.footer{
+.footer {
     position: relative;
-    z-index: -1;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
-    background-color: $lilac;
+    background-color: $pink
 }
 
 .footer-text,
-#footer-year{
+#footer-year {
     font-family: $fontSansSerif;
     font-weight: 300;
     font-size: 14px;
     color: $navyBlue;
+}
+
+
+// ================QUERIES================
+
+@media screen and (min-width: $xxl) {
+
+    // ================HOME PAGE================
+    .nav-bar {
+        height: 100px;
+    }
+
+    .nav-button {
+        padding: 20px 30px;
+    }
+
+    .nav-item,
+    .nav-resume-link {
+        font-size: 30px;
+    }
+
+    .hero {
+        position: relative;
+        top: 400px;
+    }
+
+    .sub-heading,
+    .text-heading {
+        font-size: 30px;
+    }
+
+    .main-heading {
+        font-size: 80px;
+    }
+
+    //====SIDE LINKS===
+    .contact-sides {
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .side-email {
+        left: 20px;
+    }
+
+    .email-div {
+        width: 20px;
+        transform: rotate(270deg);
+    }
+
+    .email-text {
+        font-size: 16px;
+        font-family: $fontSansSerif;
+        font-weight: 300;
+        color: $hotPink;
+        text-decoration: none;
+        transition: 200ms ease-in-out;
+
+        &:hover {
+            font-size: 17px;
+            color: $navyBlue;
+        }
+    }
+
+    // ===================PROJECTS===============
+    .left::before {
+        height: 400px;
+        width: 500px;
+    }
+
+    .left-proj-img {
+        height: 370px;
+    }
+
+    .right-title {
+        font-size: 36px;
+    }
+
+    .right-tech {
+        font-size: 22px;
+    }
+
+    .right-info {
+        font-size: 24px;
+    }
+
+    // ===================SKILLS===============
+
+    .skills-icon-box {
+        width: 270px;
+    }
+
+    .skills-icon {
+        font-size: 80px;
+    }
+
+    .skills-working-title {
+        font-size: 32px;
+    }
+
+    .skills-working-text {
+        font-size: 24px;
+    }
+
+    // ===================CONTACT===============
+
+    .contact-text,
+    .contact-link,
+    .footer-text {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: $xl) {
+    .left-proj-img {
+        height: 200px;
+        top: 5px;
+    }
+}
+
+@media screen and (max-width: $lg) {
+
+    .responsive {
+        width: 30%;
+        right: 25px;
+        background-color: antiquewhite;
+        border-radius: 5px;
+        padding: 20px;
+    }
+
+    // ================HAMBURGER MENU================
+
+    .menu-button {
+        position: absolute;
+        cursor: pointer;
+        display: block;
+        right: 20px;
+        top: 45px;
+
+        .hamburger {
+            transition: 200ms ease-in-out;
+
+            &:hover {
+                stroke: $navyBlue;
+            }
+        }
+    }
+
+    .nav-elements {
+        display: none;
+        transition: 300ms ease-in-out;
+    }
+
+    .responsive {
+        display: block;
+        position: absolute;
+        top: 110px;
+        right: 20px;
+        transition: 300ms ease-in-out;
+
+        .nav-button {
+            margin-top: 15px;
+        }
+    }
+
+
+    // ================PROJECTS================
+
+    .left::before {
+        height: 200px;
+    }
+
+    .left-proj-img {
+        top: 10px;
+        left: 55px;
+        height: 150px;
+    }
+
+    .right-title {
+        font-size: 20px;
+    }
+
+    .right-info {
+        font-size: 16px;
+    }
+
+    // ================SKILLS================
+
+    .skills-icon-box {
+        width: 145px;
+    }
+}
+
+@media screen and (max-width: $md) {
+
+    .responsive {
+        width: 30%;
+    }
+
+    // ================HAMBURGER MENU================
+
+    .underline-hidden {
+        background-size: 200% 2px;
+    }
+
+    // ================HOME PAGE================
+    .hero {
+        width: 80%;
+        padding-left: 30px;
+    }
+
+    .sub-heading {
+        font-size: 14px;
+
+    }
+
+    .main-heading {
+        font-size: 36px;
+    }
+
+    .text-heading {
+        font-size: 20px;
+    }
+
+    // ================TITLES================
+    .title,
+    .title-number,
+    .skills-currently-working {
+        font-size: 20px;
+    }
+
+    .title-line {
+        width: 150px;
+    }
+
+    //=================PROJECTS==================
+
+    .project-one,
+    .project-two,
+    .project-three,
+    .project-four,
+    .project-five,
+    .project-six {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+        position: relative;
+
+        &::before {
+            height: 200px;
+            width: 200px;
+        }
+    }
+
+    .right {
+        width: 100%;
+        position: relative;
+        top: 60px;
+    }
+
+    //=================SKILLS==================
+
+    .skills-container {
+        padding: 10px;
+    }
+
+    .skills-icon-box {
+        padding: 10px;
+        width: 70px;
+    }
+
+    .skills-icon {
+        font-size: 40px;
+    }
+
+    .skills-icon-title {
+        font-size: 13px;
+    }
+
+    .skills-working-text,
+    .contact-text,
+    .contact-link {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: $sm) {
+
+    .responsive {
+        width: 75%;
+    }
+
+    .projects,
+    .skills,
+    .contact {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .right-info,
+    .skills-working-text,
+    .contact-text,
+    .contact-link {
+        font-size: 14px;
+    }
+
+    .left-proj-img {
+        left: 0;
+        height: 145px;
+    }
+
+    // ================CONTACT SECTION================
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-text {
+        width: 90%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .contact-button {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: $xs) {
+
+    .left::before {
+        height: 145px;
+        width: 100px;
+    }
+
+    .left-proj-img {
+        height: 100px;
+        left: 5px;
+    }
+
+    .skills-icon-box {
+        width: 45px;
+    }
+
+    .skills-icon-title,
+    .contact-text,
+    .contact-link,
+    .footer-text {
+        font-size: 10px;
+    }
+
+    .skills-working-title {
+        font-size: 15px;
+    }
+
+    .skills-working-text {
+        width: 80%;
+        font-size: 10px;
+    }
+
 }
