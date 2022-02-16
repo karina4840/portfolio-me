@@ -145,6 +145,7 @@
     overflow: hidden;
 }
 
+
 .nav-number {
     font-weight: 700;
     margin-right: 5px;
@@ -329,6 +330,11 @@
     z-index: 2;
     top: -5px;
     right: -25%;
+    transition: 200ms ease-in-out;
+
+    &:hover {
+        transform: scale(1.03);
+    }
 }
 
 //===================RIGHT SIDE===================
@@ -700,14 +706,6 @@
 
 @media screen and (max-width: $lg) {
 
-    .responsive {
-        width: 30%;
-        right: 25px;
-        background-color: antiquewhite;
-        border-radius: 5px;
-        padding: 20px;
-    }
-
     // ================HAMBURGER MENU================
 
     .menu-button {
@@ -732,17 +730,28 @@
     }
 
     .responsive {
+        width: 30%;
+        right: 25px;
+        background-color: $ivory;
+        border-radius: 5px;
+        padding: 20px;
+
         display: block;
         position: absolute;
         top: 110px;
         right: 20px;
-        transition: 300ms ease-in-out;
+        transition: 200ms ease-in-out;
+        opacity: 0;
 
         .nav-button {
             margin-top: 15px;
         }
     }
 
+    .shown {
+        opacity: 1;
+        transition: 200ms ease-out;
+    }
 
     // ================PROJECTS================
 
@@ -869,7 +878,8 @@
 @media screen and (max-width: $sm) {
 
     .responsive {
-        width: 75%;
+        width: 65%;
+        right: 55px;
     }
 
     .projects,
@@ -891,6 +901,10 @@
         height: 145px;
     }
 
+    .skills-currently-working{
+        width: 95%;
+    }
+
     // ================CONTACT SECTION================
 
     .contact-container {
@@ -909,6 +923,11 @@
 }
 
 @media screen and (max-width: $xs) {
+
+    .responsive {
+        width: 65%;
+        right: 55px;
+    }
 
     .left::before {
         height: 145px;
