@@ -977,6 +977,7 @@
   }
   .skills-working-title {
     font-size: 15px;
+    text-decoration: none;
   }
   .skills-working-text {
     width: 80%;
