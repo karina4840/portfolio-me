@@ -48,6 +48,17 @@
   list-style: none;
 }
 
+.resume-lang {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #f06988;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+}
+
 .link-image {
   margin-top: 15px;
   cursor: pointer;
@@ -168,6 +179,9 @@
   background-size: 201%;
   transition: 200ms ease-in-out;
 }
+.nav-button:first-of-type {
+  margin-right: 10px;
+}
 .nav-button:hover {
   background-position: left;
 }
@@ -175,6 +189,12 @@
   text-decoration: none;
   background-color: transparent;
   color: #172c66;
+  display: flex;
+}
+
+.cv-btn-flag {
+  margin-left: 5px;
+  font-size: 16px;
 }
 
 .menu-button {
@@ -673,6 +693,7 @@
   }
   .responsive-nav .nav-button {
     margin-top: 15px;
+    margin-right: 0;
   }
   .shown {
     opacity: 1;
