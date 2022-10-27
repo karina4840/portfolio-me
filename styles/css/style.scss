@@ -42,7 +42,6 @@
 
     &:hover {
         font-size: 17px;
-        color: $navyBlue;
     }
 }
 
@@ -62,7 +61,6 @@
 
     &:hover {
         transform: scale(1.2);
-        stroke: $navyBlue;
     }
 }
 
@@ -729,7 +727,7 @@
         transition: 300ms ease-in-out;
     }
 
-    .responsive {
+    .responsive-nav {
         width: 30%;
         right: 25px;
         background-color: $ivory;
@@ -782,7 +780,7 @@
 
 @media screen and (max-width: $md) {
 
-    .responsive {
+    .responsive-nav {
         width: 30%;
     }
 
@@ -877,7 +875,7 @@
 
 @media screen and (max-width: $sm) {
 
-    .responsive {
+    .responsive-nav {
         width: 65%;
         right: 55px;
     }
@@ -924,7 +922,7 @@
 
 @media screen and (max-width: $xs) {
 
-    .responsive {
+    .responsive-nav {
         width: 65%;
         right: 55px;
     }
@@ -951,9 +949,7 @@
     }
 
     .skills-working-title {
-            font-size: 15px;
-            text-decoration: none;
-        
+        font-size: 15px;
     }
 
     .skills-working-text {
