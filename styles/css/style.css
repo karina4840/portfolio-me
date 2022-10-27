@@ -179,9 +179,6 @@
   background-size: 201%;
   transition: 200ms ease-in-out;
 }
-.nav-button:first-of-type {
-  margin-right: 10px;
-}
 .nav-button:hover {
   background-position: left;
 }
