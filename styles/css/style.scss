@@ -3,6 +3,7 @@
 * {
   padding: 0;
   margin: 0;
+  transition: ease-in-out 200ms;
 }
 
 .home,
@@ -38,7 +39,6 @@
   font-weight: 300;
   color: $hotPink;
   text-decoration: none;
-  transition: 200ms ease-in-out;
 
   &:hover {
     font-size: 17px;
@@ -54,21 +54,20 @@
   list-style: none;
 }
 
-.resume-lang{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: $hotPink;
-    font-family: $fontSansSerif;
-    font-size: 10px;
-    font-weight: 500;
+.resume-lang {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: $hotPink;
+  font-family: $fontSansSerif;
+  font-size: 10px;
+  font-weight: 500;
 }
 
 .link-image {
   margin-top: 15px;
   cursor: pointer;
-  transition: 200ms ease-in-out;
 
   &:hover {
     transform: scale(1.2);
@@ -179,7 +178,6 @@
   background-size: 200% 2px;
   background-position: bottom right;
   background-repeat: no-repeat;
-  transition: 200ms ease-in-out;
 
   &:hover {
     background-position: bottom left;
@@ -191,7 +189,6 @@
   border-radius: 5px;
   background: linear-gradient(to left, $peach 50%, $pink 50%) right;
   background-size: 201%;
-  transition: 200ms ease-in-out;
 
   &:hover {
     background-position: left;
@@ -205,9 +202,9 @@
   }
 }
 
-.cv-btn-flag{
-    margin-left: 5px;
-    font-size: 16px;
+.cv-btn-flag {
+  margin-left: 5px;
+  font-size: 16px;
 }
 
 .menu-button {
@@ -342,7 +339,6 @@
   z-index: 2;
   top: -5px;
   right: -25%;
-  transition: 200ms ease-in-out;
 
   &:hover {
     transform: scale(1.03);
@@ -358,7 +354,6 @@
   background-size: 200% 1px;
   background-position: bottom right;
   background-repeat: no-repeat;
-  transition: 300ms ease-in-out;
 
   &:hover {
     background-position: bottom left;
@@ -373,7 +368,6 @@
   background-size: 200% 1px;
   background-position: bottom right;
   background-repeat: no-repeat;
-  transition: 300ms ease-in-out;
 
   &:hover {
     background-position: bottom left;
@@ -388,7 +382,6 @@
   background-size: 200% 1px;
   background-position: bottom right;
   background-repeat: no-repeat;
-  transition: 300ms ease-in-out;
 
   &:hover {
     background-position: bottom left;
@@ -488,7 +481,8 @@
 }
 
 .css:hover,
-.wordpress:hover {
+.webpack:hover,
+.jquery:hover {
   color: $blue;
 }
 
@@ -496,12 +490,8 @@
   color: $yellow;
 }
 
-.jquery:hover {
-  color: $navyBlue;
-}
-
 .react:hover {
-  color: $cyan;
+  color: $babyBlue;
 }
 
 .sass:hover,
@@ -510,7 +500,7 @@
 }
 
 .git:hover {
-  color: $orange;
+  color: $black;
 }
 
 .mongo:hover,
@@ -559,7 +549,6 @@
   border-radius: 5px;
   background: linear-gradient(to left, $beige 50%, $pink 50%) right;
   background-size: 201%;
-  transition: 200ms ease-in-out;
 
   &:hover {
     background-position: left;
@@ -648,7 +637,6 @@
     font-weight: 300;
     color: $hotPink;
     text-decoration: none;
-    transition: 200ms ease-in-out;
 
     &:hover {
       font-size: 17px;
@@ -723,8 +711,6 @@
     top: 45px;
 
     .hamburger {
-      transition: 200ms ease-in-out;
-
       &:hover {
         stroke: $navyBlue;
       }
@@ -733,7 +719,6 @@
 
   .nav-elements {
     display: none;
-    transition: 300ms ease-in-out;
   }
 
   .responsive-nav {
@@ -747,7 +732,7 @@
     position: absolute;
     top: 110px;
     right: 20px;
-    transition: 200ms ease-in-out;
+
     opacity: 0;
 
     .nav-button {
@@ -758,7 +743,6 @@
 
   .shown {
     opacity: 1;
-    transition: 200ms ease-out;
   }
 
   // ================PROJECTS================

@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  transition: ease-in-out 200ms;
 }
 
 .home,
@@ -34,7 +35,6 @@
   font-weight: 300;
   color: #f06988;
   text-decoration: none;
-  transition: 200ms ease-in-out;
 }
 .email-text:hover {
   font-size: 17px;
@@ -62,7 +62,6 @@
 .link-image {
   margin-top: 15px;
   cursor: pointer;
-  transition: 200ms ease-in-out;
 }
 .link-image:hover {
   transform: scale(1.2);
@@ -166,7 +165,6 @@
   background-size: 200% 2px;
   background-position: bottom right;
   background-repeat: no-repeat;
-  transition: 200ms ease-in-out;
 }
 .underline-hidden:hover {
   background-position: bottom left;
@@ -177,7 +175,6 @@
   border-radius: 5px;
   background: linear-gradient(to left, #fcdccc 50%, #f097b9 50%) right;
   background-size: 201%;
-  transition: 200ms ease-in-out;
 }
 .nav-button:hover {
   background-position: left;
@@ -324,7 +321,6 @@
   z-index: 2;
   top: -5px;
   right: -25%;
-  transition: 200ms ease-in-out;
 }
 .left-proj-img:hover {
   transform: scale(1.03);
@@ -338,7 +334,6 @@
   background-size: 200% 1px;
   background-position: bottom right;
   background-repeat: no-repeat;
-  transition: 300ms ease-in-out;
 }
 .project-link-one:hover,
 .project-link-four:hover {
@@ -353,7 +348,6 @@
   background-size: 200% 1px;
   background-position: bottom right;
   background-repeat: no-repeat;
-  transition: 300ms ease-in-out;
 }
 .project-link-two:hover,
 .project-link-five:hover {
@@ -368,7 +362,6 @@
   background-size: 200% 1px;
   background-position: bottom right;
   background-repeat: no-repeat;
-  transition: 300ms ease-in-out;
 }
 .project-link-three:hover,
 .project-link-six:hover {
@@ -466,20 +459,17 @@
 }
 
 .css:hover,
-.wordpress:hover {
-  color: #2268a1;
+.webpack:hover,
+.jquery:hover {
+  color: #1c78c0;
 }
 
 .js:hover {
-  color: #f1da8f;
-}
-
-.jquery:hover {
-  color: #172c66;
+  color: #F0DB4F;
 }
 
 .react:hover {
-  color: #7cd1c3;
+  color: #61DAFB;
 }
 
 .sass:hover,
@@ -488,7 +478,7 @@
 }
 
 .git:hover {
-  color: #e09f7f;
+  color: rgb(43, 43, 43);
 }
 
 .mongo:hover,
@@ -537,7 +527,6 @@
   border-radius: 5px;
   background: linear-gradient(to left, #fef6e4 50%, #f097b9 50%) right;
   background-size: 201%;
-  transition: 200ms ease-in-out;
 }
 .contact-button:hover {
   background-position: left;
@@ -611,7 +600,6 @@
     font-weight: 300;
     color: #f06988;
     text-decoration: none;
-    transition: 200ms ease-in-out;
   }
   .email-text:hover {
     font-size: 17px;
@@ -665,15 +653,11 @@
     right: 20px;
     top: 45px;
   }
-  .menu-button .hamburger {
-    transition: 200ms ease-in-out;
-  }
   .menu-button .hamburger:hover {
     stroke: #172c66;
   }
   .nav-elements {
     display: none;
-    transition: 300ms ease-in-out;
   }
   .responsive-nav {
     width: 30%;
@@ -685,7 +669,6 @@
     position: absolute;
     top: 110px;
     right: 20px;
-    transition: 200ms ease-in-out;
     opacity: 0;
   }
   .responsive-nav .nav-button {
@@ -694,7 +677,6 @@
   }
   .shown {
     opacity: 1;
-    transition: 200ms ease-out;
   }
   .left::before {
     height: 200px;
