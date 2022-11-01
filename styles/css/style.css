@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Onest300";
+  src: url("../fonts/OnestLight1602-hint.ttf");
+}
+@font-face {
+  font-family: "Onest500";
+  src: url("../fonts/OnestMedium1602-hint.ttf");
+}
+@font-face {
+  font-family: "Onest700";
+  src: url("../fonts/OnestBold1602-hint.ttf");
+}
 * {
   padding: 0;
   margin: 0;
@@ -31,8 +43,7 @@
 
 .email-text {
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
+  font-family: "Onest300";
   color: #f06988;
   text-decoration: none;
 }
@@ -54,9 +65,8 @@
   align-items: center;
   text-decoration: none;
   color: #f06988;
-  font-family: "Poppins", sans-serif;
+  font-family: "Onest500";
   font-size: 10px;
-  font-weight: 500;
 }
 
 .link-image {
@@ -91,7 +101,7 @@
 }
 
 .title-number {
-  font-family: "Poppins", sans-serif;
+  font-family: "Onest700";
   font-size: 30px;
 }
 
@@ -110,7 +120,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-family: "Poppins", sans-serif;
   font-size: 1rem;
 }
 
@@ -128,7 +137,7 @@
 
 .brand-name {
   font-size: 18px;
-  font-weight: 500;
+  font-family: "Onest500";
   color: #172c66;
 }
 
@@ -141,12 +150,12 @@
 }
 
 .nav-number {
-  font-weight: 700;
+  font-family: "Onest700";
   margin-right: 5px;
 }
 
 .nav-item {
-  font-weight: 300;
+  font-family: "Onest300";
   margin: auto;
   height: 45px;
   margin-right: 25px;
@@ -183,16 +192,21 @@
   text-decoration: none;
   background-color: transparent;
   color: #172c66;
+  font-family: "Onest500";
   display: flex;
-}
-
-.cv-btn-flag {
-  margin-left: 5px;
-  font-size: 16px;
 }
 
 .menu-button {
   display: none;
+}
+
+#switch-lang {
+  background-color: transparent;
+  border: none;
+  text-align: start;
+}
+#switch-lang:hover {
+  cursor: pointer;
 }
 
 .home {
@@ -207,8 +221,7 @@
 .sub-heading {
   color: #f06988;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
+  font-family: "Onest500";
   font-size: clamp(16px, 8vw, 18px);
   padding-top: 200px;
 }
@@ -229,11 +242,10 @@
 }
 
 .text-heading {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
+  font-family: "Onest300";
   color: #172c66;
-  font-size: 28px;
-  letter-spacing: -1px;
+  font-size: 24px;
+  letter-spacing: 0.25px;
   padding-top: 20px;
 }
 
@@ -384,9 +396,8 @@
 }
 
 .right-info {
-  font-family: "Poppins", sans-serif;
+  font-family: "Onest300";
   font-size: 18px;
-  font-weight: 300;
   color: #172c66;
 }
 
@@ -448,8 +459,7 @@
 }
 
 .skills-working-text {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
+  font-family: "Onest300";
   font-size: 18px;
   color: #172c66;
 }
@@ -512,10 +522,9 @@
 .contact-text {
   width: 45%;
   text-align: left;
-  font-family: "Poppins", sans-serif;
+  font-family: "Onest300";
   font-size: 20px;
   color: #172c66;
-  font-weight: 300;
 }
 
 .contact-button {
@@ -534,7 +543,7 @@
 
 .contact-link {
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
+  font-family: "Onest500";
   text-align: center;
   color: #172c66;
   font-size: 20px;
@@ -552,8 +561,7 @@
 
 .footer-text,
 #footer-year {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
+  font-family: "Onest300";
   font-size: 14px;
   color: #172c66;
 }
@@ -596,8 +604,7 @@
   }
   .email-text {
     font-size: 16px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
+    font-family: "Onest300";
     color: #f06988;
     text-decoration: none;
   }
@@ -700,6 +707,9 @@
   .responsive-nav {
     width: 30%;
   }
+  .nav-item a {
+    margin-top: 15px;
+  }
   .underline-hidden {
     background-size: 200% 2px;
   }
@@ -769,6 +779,9 @@
     width: 65%;
     right: 55px;
   }
+  .nav-item a {
+    margin-top: 15px;
+  }
   .projects,
 .skills,
 .contact {
@@ -828,5 +841,8 @@
   .skills-working-text {
     width: 80%;
     font-size: 10px;
+  }
+  .nav-item a {
+    margin-top: 15px;
   }
 }/*# sourceMappingURL=style.css.map */

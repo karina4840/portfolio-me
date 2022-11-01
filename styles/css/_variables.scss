@@ -1,5 +1,21 @@
 
 $fontSansSerif: 'Poppins', sans-serif;
+
+@font-face{
+    font-family: 'Onest300';
+    src: url('../fonts/OnestLight1602-hint.ttf');
+}
+
+@font-face{
+    font-family: 'Onest500';
+    src: url('../fonts/OnestMedium1602-hint.ttf');
+}
+
+@font-face{
+    font-family: 'Onest700';
+    src: url('../fonts/OnestBold1602-hint.ttf');
+}
+
 $fontCursive: 'Yeseva One', cursive;
 $fontMono: 'Red Hat Mono', monospace;
 
