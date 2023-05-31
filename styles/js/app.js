@@ -30,11 +30,18 @@ $(document).ready(function () {
   });
 });
 
-//=========LANGUAGE FEATURE==========
-$('[lang="en"]').hide();
+$(".up-btn").click(function (e) {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+});
 
-$("#switch-lang").click(function (e) {
-  e.preventDefault();
-  $('[lang="ru"]').toggle();
-  $('[lang="en"]').toggle();
+window.addEventListener("scroll", (e) => {
+  $(".up-btn").style.display =
+    window.scrollY > 800
+      ? $(".up-btn").css('opacity', 100)
+      : $(".up-btn").css('opacity', 0);
+
 });

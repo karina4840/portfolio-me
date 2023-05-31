@@ -59,6 +59,17 @@
   list-style: none;
 }
 
+.up-btn {
+  opacity: 0;
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  top: 50px;
+}
+.up-btn:hover {
+  transform: scale(1.2);
+}
+
 .resume-lang {
   display: flex;
   flex-direction: column;
@@ -250,7 +261,6 @@
 }
 
 .projects {
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   background-color: #faebd7;
@@ -402,7 +412,6 @@
 }
 
 .skills {
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   background-color: #fcdccc;
@@ -453,9 +462,6 @@
   font-size: 20px;
   margin-bottom: 10px;
   color: #172c66;
-  text-decoration: underline;
-  text-underline-offset: -35px;
-  text-decoration-thickness: 1px;
 }
 
 .skills-working-text {
@@ -501,7 +507,6 @@
 }
 
 .contact {
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   background-color: #fef6e4;
@@ -574,7 +579,7 @@
     padding: 20px 30px;
   }
   .nav-item,
-.nav-resume-link {
+  .nav-resume-link {
     font-size: 30px;
   }
   .hero {
@@ -582,7 +587,7 @@
     top: 400px;
   }
   .sub-heading,
-.text-heading {
+  .text-heading {
     font-size: 30px;
   }
   .main-heading {
@@ -641,8 +646,8 @@
     font-size: 24px;
   }
   .contact-text,
-.contact-link,
-.footer-text {
+  .contact-link,
+  .footer-text {
     font-size: 24px;
   }
 }
@@ -727,19 +732,19 @@
     font-size: 20px;
   }
   .title,
-.title-number,
-.skills-currently-working {
+  .title-number,
+  .skills-currently-working {
     font-size: 20px;
   }
   .title-line {
     width: 150px;
   }
   .project-one,
-.project-two,
-.project-three,
-.project-four,
-.project-five,
-.project-six {
+  .project-two,
+  .project-three,
+  .project-four,
+  .project-five,
+  .project-six {
     flex-direction: column;
   }
   .left {
@@ -769,8 +774,8 @@
     font-size: 13px;
   }
   .skills-working-text,
-.contact-text,
-.contact-link {
+  .contact-text,
+  .contact-link {
     font-size: 16px;
   }
 }
@@ -783,15 +788,15 @@
     margin-top: 15px;
   }
   .projects,
-.skills,
-.contact {
+  .skills,
+  .contact {
     padding-left: 80px;
     padding-right: 80px;
   }
   .right-info,
-.skills-working-text,
-.contact-text,
-.contact-link {
+  .skills-working-text,
+  .contact-text,
+  .contact-link {
     font-size: 14px;
   }
   .left-proj-img {
@@ -830,9 +835,9 @@
     width: 45px;
   }
   .skills-icon-title,
-.contact-text,
-.contact-link,
-.footer-text {
+  .contact-text,
+  .contact-link,
+  .footer-text {
     font-size: 10px;
   }
   .skills-working-title {
