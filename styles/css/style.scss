@@ -7,6 +7,7 @@
 }
 
 .home,
+.experience,
 .projects,
 .skills,
 .contact {
@@ -264,6 +265,57 @@
   padding-top: 20px;
 }
 
+// ===============EXPERIENCE PAGE===============
+.experience {
+  height:max-content;
+  background-color: $peach;
+  padding: 10%;
+}
+.experience-container {
+  background-color: $ivory;
+  border-radius: 5px;
+  padding: 40px;
+  margin: auto;
+  box-shadow: 3px 3px 50px $shadow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: right;
+}
+
+.experience-title-div{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.experience-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.experience-details {
+  font-family: $fontMono;
+  font-size: 14px;
+  color: $navyBlue;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+.experience-info {
+  list-style-type: circle;
+}
+
+.experience-info-item{
+  margin-bottom: 10px;
+  background: no-repeat left top;
+  font-size: 15px;
+}
+
+.style-info{
+  font-family: "Onest500";
+}
 // ===============PROJECTS PAGE===============
 .projects {
   height: fit-content;
@@ -357,7 +409,8 @@
 
 //===================RIGHT SIDE===================
 .project-link-one,
-.project-link-four {
+.project-link-four,
+.experience-title {
   text-decoration: none;
   width: 65%;
   background: linear-gradient(to left, $ivory 50%, $orange 50%) right;
@@ -398,7 +451,8 @@
   }
 }
 
-.right-title {
+.right-title,
+.experience-title {
   font-family: $fontCursive;
   font-size: 24px;
   margin-bottom: 5px;
@@ -413,7 +467,8 @@
   margin-top: 20px;
 }
 
-.right-info {
+.right-info,
+.experience-info {
   font-family: "Onest300";
   font-size: 18px;
   color: $navyBlue;
@@ -422,7 +477,7 @@
 // ===============SKILLS PAGE===============
 
 .skills {
-  height: fit-content;
+  height:max-content;
   background-color: $peach;
   padding: 10%;
 }
@@ -504,6 +559,10 @@
   color: $hotPink;
 }
 
+.php:hover{
+  color: $lilac;
+}
+
 .git:hover {
   color: $black;
 }
@@ -511,6 +570,14 @@
 .mongo:hover,
 .node:hover {
   color: $green;
+}
+
+.bootstrap:hover {
+  color: $lilac;
+}
+
+.MySQL:hover{
+  color: $navyBlue;
 }
 
 .bootstrap:hover {
@@ -656,7 +723,8 @@
     height: 370px;
   }
 
-  .right-title {
+  .right-title,
+  .experience-title {
     font-size: 36px;
   }
 
@@ -664,7 +732,8 @@
     font-size: 22px;
   }
 
-  .right-info {
+  .right-info,
+  .experience-info-item {
     font-size: 24px;
   }
 
@@ -759,11 +828,13 @@
     height: 150px;
   }
 
-  .right-title {
+  .right-title,
+  .experience-title {
     font-size: 20px;
   }
 
-  .right-info {
+  .right-info,
+  .experience-info-item {
     font-size: 16px;
   }
 
@@ -874,13 +945,16 @@
 @media screen and (max-width: $sm) {
   .responsive-nav {
     width: 65%;
-    right: 55px;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .nav-item a {
     margin-top: 15px;
   }
 
+  .experience,
   .projects,
   .skills,
   .contact {
@@ -891,7 +965,8 @@
   .right-info,
   .skills-working-text,
   .contact-text,
-  .contact-link {
+  .contact-link,
+  .experience-info-item {
     font-size: 14px;
   }
 

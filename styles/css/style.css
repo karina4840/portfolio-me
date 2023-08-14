@@ -10,6 +10,10 @@
   font-family: "Onest700";
   src: url("../fonts/OnestBold1602-hint.ttf");
 }
+@font-face {
+  font-family: "Onest900";
+  src: url("../fonts/OnestBlack1602-hint.ttf");
+}
 * {
   padding: 0;
   margin: 0;
@@ -17,6 +21,7 @@
 }
 
 .home,
+.experience,
 .projects,
 .skills,
 .contact {
@@ -260,6 +265,59 @@
   padding-top: 20px;
 }
 
+.experience {
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #fcdccc;
+  padding: 10%;
+}
+
+.experience-container {
+  background-color: #faebd7;
+  border-radius: 5px;
+  padding: 40px;
+  margin: auto;
+  box-shadow: 3px 3px 50px #d3b09e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: right;
+}
+
+.experience-title-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.experience-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.experience-details {
+  font-family: "Red Hat Mono", monospace;
+  font-size: 14px;
+  color: #172c66;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+.experience-info {
+  list-style-type: circle;
+}
+
+.experience-info-item {
+  margin-bottom: 10px;
+  background: no-repeat left top;
+  font-size: 15px;
+}
+
+.style-info {
+  font-family: "Onest500";
+}
+
 .projects {
   height: -moz-fit-content;
   height: fit-content;
@@ -349,7 +407,8 @@
 }
 
 .project-link-one,
-.project-link-four {
+.project-link-four,
+.experience-title {
   text-decoration: none;
   width: 65%;
   background: linear-gradient(to left, #faebd7 50%, #e09f7f 50%) right;
@@ -358,7 +417,8 @@
   background-repeat: no-repeat;
 }
 .project-link-one:hover,
-.project-link-four:hover {
+.project-link-four:hover,
+.experience-title:hover {
   background-position: bottom left;
 }
 
@@ -390,7 +450,8 @@
   background-position: bottom left;
 }
 
-.right-title {
+.right-title,
+.experience-title {
   font-family: "Yeseva One", cursive;
   font-size: 24px;
   margin-bottom: 5px;
@@ -405,15 +466,16 @@
   margin-top: 20px;
 }
 
-.right-info {
+.right-info,
+.experience-info {
   font-family: "Onest300";
   font-size: 18px;
   color: #172c66;
 }
 
 .skills {
-  height: -moz-fit-content;
-  height: fit-content;
+  height: -moz-max-content;
+  height: max-content;
   background-color: #fcdccc;
   padding: 10%;
 }
@@ -493,6 +555,10 @@
   color: #f06988;
 }
 
+.php:hover {
+  color: #d3bcee;
+}
+
 .git:hover {
   color: rgb(43, 43, 43);
 }
@@ -500,6 +566,14 @@
 .mongo:hover,
 .node:hover {
   color: #7ece99;
+}
+
+.bootstrap:hover {
+  color: #d3bcee;
+}
+
+.MySQL:hover {
+  color: #172c66;
 }
 
 .bootstrap:hover {
@@ -624,13 +698,15 @@
   .left-proj-img {
     height: 370px;
   }
-  .right-title {
+  .right-title,
+  .experience-title {
     font-size: 36px;
   }
   .right-tech {
     font-size: 22px;
   }
-  .right-info {
+  .right-info,
+  .experience-info-item {
     font-size: 24px;
   }
   .skills-icon-box {
@@ -698,10 +774,12 @@
     left: 55px;
     height: 150px;
   }
-  .right-title {
+  .right-title,
+  .experience-title {
     font-size: 20px;
   }
-  .right-info {
+  .right-info,
+  .experience-info-item {
     font-size: 16px;
   }
   .skills-icon-box {
@@ -782,11 +860,14 @@
 @media screen and (max-width: 550px) {
   .responsive-nav {
     width: 65%;
-    right: 55px;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .nav-item a {
     margin-top: 15px;
   }
+  .experience,
   .projects,
   .skills,
   .contact {
@@ -796,7 +877,8 @@
   .right-info,
   .skills-working-text,
   .contact-text,
-  .contact-link {
+  .contact-link,
+  .experience-info-item {
     font-size: 14px;
   }
   .left-proj-img {

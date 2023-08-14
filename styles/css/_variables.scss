@@ -16,6 +16,11 @@ $fontSansSerif: 'Poppins', sans-serif;
     src: url('../fonts/OnestBold1602-hint.ttf');
 }
 
+@font-face{
+    font-family: 'Onest900';
+    src: url('../fonts/OnestBlack1602-hint.ttf');
+}
+
 $fontCursive: 'Yeseva One', cursive;
 $fontMono: 'Red Hat Mono', monospace;
 
