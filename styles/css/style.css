@@ -397,13 +397,52 @@
 
 .left-proj-img {
   height: 220px;
+  width: 350px;
   position: relative;
   z-index: 2;
   top: -5px;
   right: -25%;
+  border-radius: 20px;
+  border: 1px solid #fef6e4;
+  box-shadow: 4px 5px 11px #fef6e4;
 }
 .left-proj-img:hover {
   transform: scale(1.03);
+}
+
+.proj-crypto,
+.proj-signup,
+.proj-journal,
+.proj-jokes,
+.proj-todo,
+.proj-games {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.proj-crypto {
+  background-image: url(/styles/img/crypto.png);
+}
+
+.proj-signup {
+  background-image: url(/styles/img/newsletter.png);
+}
+
+.proj-journal {
+  background-image: url(/styles/img/journal.png);
+}
+
+.proj-jokes {
+  background-image: url(/styles/img/jokes.png);
+}
+
+.proj-todo {
+  background-image: url(/styles/img/todo.png);
+}
+
+.proj-games {
+  background-image: url(/styles/img/games.png);
 }
 
 .project-link-one,
@@ -697,6 +736,7 @@
   }
   .left-proj-img {
     height: 370px;
+    width: 400px;
   }
   .right-title,
   .experience-title {
@@ -730,7 +770,11 @@
 @media screen and (max-width: 1440px) {
   .left-proj-img {
     height: 200px;
+    width: 300px;
     top: 5px;
+    border-radius: 20px;
+    border: 1px solid #fef6e4;
+    box-shadow: 4px 5px 11px #fef6e4;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -773,6 +817,7 @@
     top: 10px;
     left: 55px;
     height: 150px;
+    width: 250px;
   }
   .right-title,
   .experience-title {
@@ -884,6 +929,7 @@
   .left-proj-img {
     left: 0;
     height: 145px;
+    width: 250px;
   }
   .skills-currently-working {
     width: 95%;
@@ -911,6 +957,7 @@
   }
   .left-proj-img {
     height: 100px;
+    width: 170px;
     left: 5px;
   }
   .skills-icon-box {
