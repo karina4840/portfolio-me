@@ -400,7 +400,7 @@
   width: 350px;
   position: relative;
   z-index: 2;
-  top: -5px;
+  top: -5px; 
   right: -25%;
   border-radius: 20px;
   border: 1px solid $beige;
@@ -423,22 +423,22 @@
 }
 
 .proj-crypto{
-  background-image: url(/styles/img/crypto.png);
+  background-image: url(../img/crypto.png);
 }
 .proj-signup{
-  background-image: url(/styles/img/newsletter.png);
+  background-image: url(../img/newsletter.png);
 }
 .proj-journal{
-  background-image: url(/styles/img/journal.png);
+  background-image: url(../img/journal.png);
 }
 .proj-jokes{
-  background-image: url(/styles/img/jokes.png);
+  background-image: url(../img/jokes.png);
 }
 .proj-todo{
-  background-image: url(/styles/img/todo.png);
+  background-image: url(../img/todo.png);
 }
 .proj-games{
-  background-image: url(/styles/img/games.png);
+  background-image: url(../img/games.png);
 }
 
 //===================RIGHT SIDE===================
